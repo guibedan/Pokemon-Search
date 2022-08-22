@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #cececef5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+}
+
+span {
+    color: lightskyblue;
+}
+
+hr {
+    margin: 10px 0;
+    border-top: 3px solid lightgray;
+    border-radius: 5px;
+}
+
+
+.principal {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 450px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 25pt;
+    text-align: center;
+    padding: 10px;
+}
+
+.img, #img-pk {
+    text-align: center;
+
+}
+
+.img img {
+    width: 90%;
+}
+
+.group {
+    padding: 10px 0;
+    align-items: center;
+}
+
+.group label {
+    font-weight: 900;
+    color: #1B356E;
+}
+
+.group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.group input[type = submit] {
+    background-color: #1B356E;
+    border: 1px solid #1B356E;
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#img-pk img{
+    width: 90px;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+#content {
+    font-family: monospace;
+    padding: 10px;
+    background-color: #ffcc01;
+    border: 1px solid #c8a102;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    color: #333;
+    width: 415px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .principal {
+        height: auto;
+        width: 50vh;
+    }
+
+    #content {
+        width: auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .principal {
+        width: 40vh;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .principal {
+        width: 50vh;
+    }
+}
